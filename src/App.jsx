@@ -4,7 +4,7 @@ import {
   PresentationControls,
 } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import Watch from "./components/Watch";
+import {Watch} from "./components/Watch";
 import "./App.css";
 
 function App() {
@@ -12,11 +12,11 @@ function App() {
     <>
     
       <Canvas shadows camera={{ position: [0, 0, 10], fov: 95 }}>
-        <ambientLight intensity={0} />
+        <ambientLight intensity={2} />
         <spotLight
           position={[10, 10, 10]}
           angle={0.15}
-          penumbra={1}
+          penumbra={5}
           shadow-mapSize={2048}
           castShadow
         />
@@ -33,7 +33,7 @@ function App() {
           />
         </PresentationControls>
         <ContactShadows
-          position={[0, -1.4, 0]}
+          position={[0, -4, 0]}
           opacity={0.75}
           scale={10}
           blur={3}

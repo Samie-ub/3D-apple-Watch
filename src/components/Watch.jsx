@@ -9,7 +9,7 @@ export function Watch() {
     <group
       rotation={[0,0 , 0]}
       position={[0, 0.25, 0]}
-      scale={0.5}
+      scale={2}
       dispose={null}
     >
       <mesh
@@ -83,9 +83,9 @@ export function Watch() {
         scale={0.501}
       />
       <Html
-        scale={.8}
+        scale={.5}
         rotation={[0, 0, 0]}
-        position={[0, 0, 5]}
+        position={[0, 0, 3]}
         transform
         occlude
       >
